@@ -1,0 +1,253 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+/*Transición*/
+
+.animado {
+    opacity: 0;
+    transition: all 0.5s;
+}
+/*Los subtitulos*/
+
+.punto{
+    color: #739;
+}
+
+.subtitulo{
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/*Header*/
+
+.header {
+    height: 100vh;
+    background-image: linear-gradient(to top, #fbc2eb9f 0%, #a6c0eea1 100%), url(../img/bantersnaps-9o8YdYGTT64-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.contenedor-header {
+    color: #444;
+    font-size: 35px;
+    height: 100%;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/*Main nosotros*/
+
+.main {
+    margin-top: 40px;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.h2-main {
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 300;
+    margin-bottom: 40px;
+    background: rgba(119, 51, 153, 0.328);
+}
+
+.p-main {
+    width: 40%;
+    margin-bottom: 40px;
+}
+
+.bx {
+    color: #739;
+}
+
+/*Seccion de oferta educativa*/
+
+.oferta-educativa {
+    background: #f2f2f2;
+    height: 300px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.contenedor-section {
+    padding: 0px  10px;
+    margin: 0 10px;
+}
+
+.contenedor-section p {
+    margin: 20px;
+}
+
+/*Ejemplos*/
+
+.ejemplos {
+    margin: 20px 40px 0;
+}
+
+.contenedor-ejemplos {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.img-ejemplos{
+    width: 25%;
+}
+
+.ejemplo-explica {
+    width: 55%;
+}
+
+.h2-ejemplos {
+    margin-bottom: 20px;
+}
+
+/*Footer*/
+
+footer {
+    background: #9f8ad0;
+    padding-bottom: 0.1px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    
+}
+
+.contact-us {
+    width: 40%;
+    color: #fff;
+}
+
+.brand {
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.brand+p {
+    font-weight: 500;
+}
+
+.social-media {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-media-icon {
+    display: inline-block;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+}
+
+.social-media-icon:hover {
+    background: #fff;
+    color: #764ba2;
+}
+
+.social-media-icon i {
+    font-size: 30px;
+    line-height: 60px;
+}
+
+.line {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 2px;
+    background: #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width:800px){
+    body {
+        font-size: 17px;
+    }
+
+    .subtitulo{
+        font-size: 35px
+    }
+
+    .ejemplo-explica{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    body{
+        font-size: 15px;
+    }
+
+    .oferta-educativa{
+        height: 400px;
+    }
+
+    .img-ejemplos{
+        width: 40%;
+    }
+
+    .h2-main{
+        font-size: 30px;
+    }
+
+    .contenedor{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 0 40px;
+    }
+
+    .p-main{
+        width: 100%;
+    }
+
+    .header img{
+        size: 40%;
+    }
+
+    .contenedor-header{
+        size: 30%;
+        font-size: 25px;
+    }
+
+    .contact-us {
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+
+    .brand {
+        font-size: 15px;
+    }
+}
+
